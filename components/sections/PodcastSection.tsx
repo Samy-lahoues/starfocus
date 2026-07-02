@@ -5,18 +5,21 @@ import { YouTubeIcon } from '../icons/SocialIcons';
 const episodes = [
   {
     number: '01',
-    title: 'محمد مختاري الرياضي الخلوق - الموسم الثاني من بودكاست 180',
-    desc: 'حوار ملهم مع الرياضي الخلوق محمد مختاري ضمن الموسم الثاني من "بودكاست 180"، يتناول مسيرته الرياضية الحافلة بالقيم والأخلاق وكيفية تحقيق التوازن بين النجاح الرياضي والسلوك القويم.',
+    title: 'محمد مختاري',
+    desc: 'فيديو مباشر من بودكاست 180 مع محمد مختاري.',
+    href: 'https://www.youtube.com/watch?v=VldUpTmI7n8&t=7s&pp=0gcJCUwLAYcqIYzv',
   },
   {
     number: '02',
-    title: 'يناير: احتفال رأس السنة الأمازيغية',
-    desc: 'عرض توثيقي لتقاليد واحتفالات رأس السنة الأمازيغية "يناير"، يسلط الضوء على الأبعاد الثقافية والتاريخية لهذا الموروث الأصيل وأهميته كجزء من الهوية الوطنية.',
+    title: 'داير مخافة الله نصب عينيه',
+    desc: 'الحلقة الثالثة من بودكاست 180 مع Youppi.',
+    href: 'https://www.youtube.com/watch?v=tAauIo6XTtc&t=105s',
   },
   {
     number: '03',
-    title: 'تحديات المسار المهني وإجابات صادمة - بودكاست 180',
-    desc: 'مقطع تشويقي يستعرض إجابات غير متوقعة حول التحولات الكبرى في حياة الأفراد، وكيف يمكن لتغيير المجالات المهنية أن يؤدي إلى نتائج صادمة ومؤثرة، وذلك ضمن التحضيرات للموسم الثاني من البودكاست.',
+    title: 'لامية سايح',
+    desc: 'بودكاست 180: من نظرة المجتمع الدونية لمهنتها إلى اسم لامع في عالم الحلاقة.',
+    href: 'https://www.youtube.com/watch?v=_Wo946I9DqQ',
   },
 ];
 
@@ -57,7 +60,13 @@ export default function PodcastSection() {
           <RevealSection>
             <div className="space-y-4">
               {episodes.map((ep, i) => (
-                <div key={i} className="podcast-card rounded-xl p-6 group cursor-pointer">
+                <a
+                  key={i}
+                  href={ep.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="podcast-card block rounded-xl p-6 group cursor-pointer"
+                >
                   <div className="flex items-start gap-5">
                     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-cinema-charcoal border border-cinema-border group-hover:border-gold-500/40 flex items-center justify-center transition-colors">
                       <Play size={14} className="text-gold-500 ml-0.5" fill="currentColor" />
@@ -72,7 +81,7 @@ export default function PodcastSection() {
                       <p className="text-gray-600 text-xs leading-relaxed">{ep.desc}</p>
                     </div>
                   </div>
-                </div>
+                </a>
               ))}
 
               <a

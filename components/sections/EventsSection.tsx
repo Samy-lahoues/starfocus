@@ -82,14 +82,14 @@ export default function EventsSection() {
                         
                         {/* Image Side - Full width on mobile, 2/5 on desktop */}
                         <div className="relative md:col-span-2 h-[350px] md:h-auto overflow-hidden group/img">
-                          <Image
-                            src={event.image}
-                            alt={event.title}
-                            fill
-                            className="object-cover transition-transform duration-700 group-hover/img:scale-105"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-cinema-black via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:to-cinema-card/90" />
-                        </div>
+                        <Image
+                          src={event.image}
+                          alt={event.title}
+                          fill
+                          className="object-cover object-top transition-transform duration-700 group-hover/img:scale-105" 
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-cinema-black via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:to-cinema-card/90" />
+                      </div>
 
                         {/* Content Side - Full width on mobile, 3/5 on desktop */}
                         <div className="md:col-span-3 p-6 sm:p-12 flex flex-col justify-center relative z-10 dir-rtl" dir="rtl">

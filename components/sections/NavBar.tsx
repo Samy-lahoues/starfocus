@@ -3,13 +3,13 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { starfocusLogo } from '@/constants/images';
-import { YouTubeIcon } from '../icons/SocialIcons';
 
 const links = [
   { label: 'عن النادي', href: '#about' },
   { label: 'بودكاست °180', href: '#podcast' },
   { label: 'القضية اللغز', href: '#mystery' },
   { label: 'الفعاليات', href: '#events' },
+  { label: 'التسجيل', href: '#registration' },
   { label: 'تواصل معنا', href: '#connect' },
 ];
 
@@ -25,8 +25,8 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-cinema-dark/95 backdrop-blur-md border-b border-cinema-border shadow-2xl' : 'bg-transparent'
+      className={`sticky top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled ? 'bg-cinema-dark/95 backdrop-blur-md border-b border-cinema-border shadow-2xl' : 'bg-cinema-black/80 backdrop-blur-sm'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
@@ -49,16 +49,6 @@ export default function NavBar() {
             </a>
           ))}
         </div>
-
-        <a
-          href="https://www.youtube.com/@StarFocus10"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden md:flex btn-gold items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold"
-        >
-          <YouTubeIcon className="w-4 h-4" />
-          شاهد الآن
-        </a>
 
         <button
           className="md:hidden text-gray-400 hover:text-white transition-colors"

@@ -2,7 +2,7 @@ import { ArrowRight, ChevronDown, Clapperboard, Eye, Film, Play } from 'lucide-r
 
 export default function HeroSection() {
   return (
-    <section dir="rtl" id="hero" className="relative min-h-screen hero-bg flex flex-col items-center justify-center overflow-hidden">
+    <section dir="rtl" id="hero" className="relative min-h-[calc(100vh-120px)] hero-bg flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-500/30 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-500/30 to-transparent" />
