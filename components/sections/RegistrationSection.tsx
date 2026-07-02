@@ -12,7 +12,7 @@ const registrationSchema = z.object({
   secondTeamMember: z.string().trim().min(2, 'اسم العضو الثاني يجب أن يتكون من حرفين على الأقل.'),
   teamName: z.string().trim().min(2, 'اسم الفريق يجب أن يتكون من حرفين على الأقل.'),
   email: z.string().trim().email('يرجى إدخال بريد إلكتروني صالح.'),
-  phone: z.string().trim().regex(/^05\d{8}$/, 'يرجى إدخال رقم هاتف سعودي صحيح يبدأ بـ 05.'),
+  phone: z.string().trim().regex(/^0\d{9}$/, 'يرجى إدخال رقم هاتف صحيح يبدأ بـ 0.'),
 });
 
 export default function RegistrationSection() {
