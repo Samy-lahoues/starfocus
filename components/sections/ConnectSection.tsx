@@ -76,6 +76,34 @@ export default function ConnectSection() {
             </RevealSection>
           ))}
         </div>
+
+        <RevealSection>
+          <div className="mt-16 max-w-5xl mx-auto rounded-3xl border border-cinema-border bg-cinema-charcoal/70 p-4 sm:p-6 shadow-[0_0_40px_rgba(0,0,0,0.25)]">
+            <div className="mb-5 text-center md:text-right">
+              <p className="text-gold-500 font-tajawal text-xs tracking-[0.3em] uppercase mb-3">تجدنا في</p>
+              <h3 className="font-cinzel font-bold text-white text-3xl sm:text-4xl mb-2 leading-tight">
+                مركز الترفيه العلمي
+              </h3>
+              <p className="text-gold-500/80 font-tajawal text-sm mb-4 tracking-wide">سيدهم جعفر — البويرة</p>
+              <p className="text-gray-500 font-tajawal dir-rtl text-sm leading-relaxed">
+                StarFocus تعمل وتنمو داخل CLS، المركز الذي يجمع الشغف والعلم معاً. هنا تنطلق أفكارنا السينمائية، وهنا نبني مجتمعاً من العاشقين للسينما والإبداع.
+              </p>
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-cinema-border">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.1502622260878!2d3.901041299999999!3d36.3813563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128c2f7da4ffe005%3A0x5c953b4cbdef0595!2sCentre%20de%20loisir%20scientifique%20(CLS)%20sidhoum%20djaafer!5e0!3m2!1sen!2sdz!4v1783170534952!5m2!1sen!2sdz"
+                width="100%"
+                height="420"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                title="Location of CLS"
+                className="w-full h-[320px] sm:h-[420px]"
+              />
+            </div>
+          </div>
+        </RevealSection>
       </div>
     </section>
   );
