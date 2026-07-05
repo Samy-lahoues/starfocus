@@ -4,7 +4,7 @@ import youtubeIcon from '@/public/youtube.svg';
 import facebookIcon from '@/public/facebook.svg';
 import instagramIcon from '@/public/instagram.svg';
 import mystercasePoster from "@/public/mysterycase-poster.jpeg"
-import shortFilmEvent from "@/public/short-film-event-starfocus.png"
+import shortFilmEvent from "@/public/short-film-event-starfocus.webp"
 
 export {
     rationalizeFood,
